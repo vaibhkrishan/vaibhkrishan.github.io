@@ -2,12 +2,117 @@
 <html>
   <head>
     <title>
-      Vaibhav Krishan's Homepage
+      Vaibhav Krishan: Homepage
     </title>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showProcessingMessages: false,
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script>
+      function toggle(pId) {
+        var e=document.getElementById(pId);
+        if (!e) return;
+        if (e.style.display == "none") {
+          e.style.display = "block"
+        } else {
+          e.style.display = "none"
+        }
+        return;
+      }
+    </script>
   </head>
   <body>
     <h1>
-      Hi there, hello.
+      Vaibhav Krishan
     </h1>
+    <table summary="Table for page layout." id="tlayout">
+      <tr valign="top">
+        <td id="layout-menu">
+          <div class="menu-category">Vaibhav Krishan</div>
+          <div class="menu-item"><a href="index.html" class="current">Home</a></div>
+          <div class="menu-item"><a href="files/CV/CV.pdf">CV</a></div>
+        </td>
+        <td id="layout-content">
+          <div id="toptitle">
+            <h1>Vaibhav Krishan</h1>
+          </div>
+          <p><div style="float: right;"></p>
+          <p><img src="files/photos/photo.jpg" alt="My photo" width="300"></p>
+          <p></div></p>
+          <p>I am a PhD student at the Computer Science and Engineering department of Indian Institute of Technology Bombay, where I'm very fortunate to be advised by <a href="http://www.itu.dk/~nuli/">Prof. Nutan Limaye</a> and <a href="https://www.cse.iitb.ac.in/~sundar/">Prof. Sundar Vishwanathan</a>. Previously, I was an undergraduate student at the department of Computer Science and Engineering of Indian Institute of Technology Bombay.</p>
+          <p>I am broadly interested in theoretical computer science, especially complexity theory which deals with understanding what is &#8220hard&#8221 to compute. Currently I'm mainly working on <b>Boolean circuit complexity</b>. Some other topics of complexity theory that I find fascinating are <b>derandomisation</b>, <b>meta-complexity</b> and <b>structural complexity</b>.</p>
+          <p>Contact:</p>
+          <ul>
+            <li><p><tt>vaibhkrishan [AT] gmail [DOT] com</tt>. (recommended)</p>
+            </li>
+            <li><p><tt>vkrishan [AT] cse [DOT] iitb [DOT] ac [DOT] in</tt>.</p>
+            </li>
+            <li><p><tt>vaibhkrishan [AT] iitb [DOT] ac [DOT] in</tt>.</p>
+            </li>
+          </ul>
+          <h2>Publications</h2>
+          <p><b>Upper Bound for Torus Polynomials</b></p>
+          <ul>
+            <li><p>[<a href="https://eccc.weizmann.ac.il/report/2021/031/" target=&ldquo;blank&rdquo;>ECCC</a>],
+              [<span class="title" onclick="toggle('summary-torus-polynomials')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
+            </li>
+          </ul>
+          <p><span id="summary-torus-polynomials" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
+            <b> Summary: </b> We prove that functions that can be approximated within low error by torus polynomials of low degree, are in \(\mathsf{MidBit}^+\).
+          </span></p>
+          <ul>
+            <li><p>In The 16th International Computer Science Symposium in Russia, CSR 2021</p>
+              <ul>
+                <li><p><a href="https://link.springer.com/chapter/10.1007/978-3-030-79416-3_15" target="_blank">Proceedings version (<a href="files/pdf/torus.pdf">local</a>) </a>,
+                  <a href="files/slides/torus.pdf" targer="_blank">Slides</a></p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p><b>A #SAT Algorithm for Small Constant-Depth Circuits with PTF gates</b></p>
+          <ul>
+            <li><p>[<a href="https://eccc.weizmann.ac.il/report/2018/162/" target=&ldquo;blank&rdquo;>ECCC</a>],
+              [<a href="https://arxiv.org/abs/1809.05932" target=&ldquo;blank&rdquo;>Arxiv</a>],
+              [<span class="title" onclick="toggle('summary-ptf-sat')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
+            </li>
+          </ul>
+          <p><span id="summary-ptf-sat" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
+            <b> Summary: </b> We prove a better-than-brute-force satisfiability algorithm for constant degree polynomial threshold functions, and constant depth, with size slightly super-linear, circuits composed of constant degree polynomial threshold functions. A Boolean function is a polynomial threshold function if there is a polynomial such that the function evaluates to &#8220true&#8221 if and only if the polynomial evaluates to a negative value. A satisfiability algorithm decides whether the Boolean function represented by the polynomial or the circuit evaluates to &#8220true&#8221 on some input. A better-than-brute-force algorithm runs asymptotically much faster than simply evaluating the function over an enumeration of its inputs (aka brute-force).
+          </span></p>
+          <ul>
+            <li><p>In The 10th Innovations in Theoretical Computer Science Conference, ITCS 2019</p>
+              <ul>
+                <li><p><a href="https://drops.dagstuhl.de/opus/volltexte/2018/10101/" target="_blank">Proceedings version (<a href="files/pdf/ptf.pdf">local</a>) </a>,
+                  <a href="files/slides/ptf.pdf" targer="_blank">Slides</a></p>
+                </li>
+              </ul>
+            </li>
+            <li><p>In Algorithmica 84, 2022</p>
+              <ul>
+                <li><p><a href="https://link.springer.com/article/10.1007/s00453-021-00915-7" target="_blank">Journal version (<a href="files/pdf/ptf-journal.pdf">local</a>) </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p><b>Isolation Lemma for Directed Reachability and NL vs. L</b></p>
+          <ul>
+            <li><p>[<a href="https://eccc.weizmann.ac.il/report/2016/155/" target=&ldquo;blank&rdquo;>ECCC</a>],
+              [<span class="title" onclick="toggle('summary-isolation')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
+            </li>
+          </ul>
+          <p><span id="summary-isolation" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
+            <b> Summary: </b> We prove that an L/poly randomized procedure for isolating an s-t path for directed graphs with success probability at least 2/3 implies \(NL \subseteq L/poly\). L is the class of functions decidable by algorithms that use only logarithmic amount of space, NL is the non-deterministic version and L/poly is the non-uniform version. An algorithm for isolating an s-t path on a directed graph outputs another directed graph on the same set of nodes such that exactly one s-t path survives, provided that there was an s-t path to start with. We prove a similat result for LogCFL, a class related to push down automata.
+          </span></p>
+        </td>
+      </tr>
+    </table>
+    <a href="https://dblp.org/pid/187/8296.html">DBLP</a>
+    <a href="https://scholar.google.com/citations?user=dVMC44EAAAAJ&hl=en">Google Scholar</a>
+    <a href="https://eccc.weizmann.ac.il/author/1412/">ECCC (IIT Bombay account)</a>, <a href="https://eccc.weizmann.ac.il/author/985/">ECCC (Personal account)</a>
+    <a href="https://orcid.org/0009-0000-0335-1963">ORCID</a>
   </body>
 </html>
