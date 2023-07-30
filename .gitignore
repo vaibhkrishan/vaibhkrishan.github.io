@@ -1,1 +1,4 @@
 *.swp
+*.dvi
+*.fdb_latexmk
+*.fls
