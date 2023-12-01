@@ -2,3 +2,7 @@
 *.dvi
 *.fdb_latexmk
 *.fls
+*.aux
+*.log
+*.synctex.gz
+.DS_store
